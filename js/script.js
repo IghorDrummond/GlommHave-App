@@ -35,7 +35,7 @@ function Confirma(){
 	if(raca != 'Selecione...' && raca != ''){
 
 		//Aqui valida se a raça ja está selecionada
-		if(raca.toUpperCase() == tiporaca[posic].toUpperCase() && posic > -1){
+		if(posic > -1 && raca.toUpperCase() == tiporaca[posic].toUpperCase()){
 			Aviso('Raça Já Selecionada')
 			document.querySelector("#cabecalho select").style.borderColor = 'red'
 		}
