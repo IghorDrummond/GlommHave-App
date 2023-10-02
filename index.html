@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="stylesheet" type="text/css" href="css/gloom.css">
+		<script type="text/javascript" src="js/script.js"></script>
+		<title>GloomHaven</title>
+	</head>
+	<body>
+
+		<div id="raca"><!-- Inicio da Raça Escolhida-->
+			<div id="raca-titulo">
+				<h4>Brutos Inox</h4>
+			</div>
+			<div id="raca-imagem">
+			</div>
+			<button onclick="Continuar()">Continuar</button>
+			<audio src="audio/escolhido.mp3"></audio>
+		</div><!-- Fim da Raça Escolhida-->
+
+		<div id="container-aviso"><!-- Inicio da Mensagem de Erro -->
+			<div id="aviso">
+				<div>
+					<h5>Error Menssagem</h5>
+				</div>
+				<div>
+					<button onclick="Ok()">Ok</button>
+				</div>
+			</div>
+			<audio src="audio/erro.mp3"></audio>
+		</div><!-- Fim da Mensagem de Erro-->
+
+		<div id="home">
+			<div id="cabecalho"><!-- Inicio do Cabecalho -->
+				<h4>Escolha uma Classe</h4>
+				<select>
+					<option selected>Selecione...</option>
+					<option value="Brutos">Brutos</option>
+					<option value="Engenhoqueiro">Engenhoqueiro</option>
+					<option value="tecelã">Tecelã</option>
+					<option value="malandra">Malandra</option>
+					<option value="coração de pedra">Coração de Pedra</option>
+					<option value="ladra de mentes">Ladra de Mentes</option>
+				</select>
+				<button onclick="Confirma()">Confirmar Especie?</button>
+			</div><!-- Fim do Cabecalho -->
+
+			<div id="formulario"><!-- Inicio do Formulario -->
+				<form>
+					<fieldset>
+						<legend>Nome/Nivel e EXP</legend>
+
+						<div>
+							<label>Nome:</label><br>
+							<input type="text" name="nome">
+						</div>
+
+						<div>
+							<label>Nivel:</label><br>
+							<text>1<input type="radio" name="nivel" value="1"></text>
+							<text>2<input type="radio" name="nivel" value="2"></text>
+							<text>3<input type="radio" name="nivel" value="3"></text>
+							<text>4<input type="radio" name="nivel" value="4"></text>
+							<text>5<input type="radio" name="nivel" value="5"></text>
+							<text>6<input type="radio" name="nivel" value="6"></text>
+							<text>7<input type="radio" name="nivel" value="7"></text>
+							<text>8<input type="radio" name="nivel" value="8"></text>
+							<text>9<input type="radio" name="nivel" value="9"></text>
+						</div>
+
+						<div>
+							<label>Exp: </label>
+							<br>
+							0<input type="radio" name="exp" value="0">|
+							45<input type="radio" name="exp" value="45">|
+							95<input type="radio" name="exp" value="95">|
+							150<input type="radio" name="exp" value="150">|
+							210<input type="radio" name="exp" value="210">|
+							275<input type="radio" name="exp" value="275">|
+							345<input type="radio" name="exp" value="345">|
+							420<input type="radio" name="exp" value="420">|
+							500<input type="radio" name="exp" value="500">
+						</div>
+					</fieldset>
+
+					<fieldset>
+						<legend>Anotações de Exp</legend>
+						<br>
+						<textarea>
+							</textarea>
+					</fieldset>
+
+					<fieldset>
+						<legend>Anotações de Ouro:</legend>
+						<textarea>
+							</textarea>
+					</fieldset>
+
+					<fieldset>
+						<legend>Itens:</legend>
+						<textarea>
+							</textarea>
+					</fieldset>
+				</form>
+			</div><!-- Fim do Formulario -->
+
+			<div id="vantagens"><!-- Inicio da Vantagens -->
+				<h2>Vantagens</h2>
+				<form>
+					<input type="checkbox" name="duascartas">Remova duas Cartas (-1)
+					<br>
+					<input type="checkbox" name="substitua">Substitua uma Carta (-1) Por uma carta (+1)
+					<br>
+					<input type="checkbox" name="remova"><input type="checkbox" value="">Adiciona duas Cartas (+1)
+					<br>
+					<input type="checkbox" name=""><input type="checkbox" name="">Adicione três Cartas |EMPUTAR (==>)1|
+					<br>
+					<input type="checkbox" name="">Adicione duas Cartas |PERFURAR (==>*)3|
+					<br>
+					<input type="checkbox" name="">Adicione uma Carta |ATORDOAR(*)|
+					<br>
+					<input type="checkbox" name="">Adicione uma Carta |DESARMAR| e uma Carta |CONFUNDIR(?)|
+					<br>
+					<input type="checkbox" name=""><input type="checkbox" name="">Adicione uma Carta |ADICIONAR ALVO|
+					<br>
+					<input type="checkbox" name="">Adicione uma Carta (+1) Escudo 1, Próprio
+					<br>
+					<input type="checkbox" name="">Ignore efeitos negativos de itens e adicione uma carta (+1)
+				</form>
+			</div><!-- Fim da Vantagens -->
+
+			<div id="anotacoes"><!-- Inicio da Anotações -->
+				<h2>Anotações</h2>
+				<textarea>
+
+					</textarea>
+			</div><!-- Fim da Anotãções -->
+			<div id="rodape">
+				<button onclick="voltar()">Escolher Outra Espécie</button>
+				<h4>Todos os Direitos Reservados 2023 - Ighor Drummond</h4>
+			</div>
+		</div>
+	</body>
+</html>
