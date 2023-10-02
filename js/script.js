@@ -2,7 +2,7 @@
 //String
 var raca = ""//Recebe a Raça do Personagem
 //Numero
-var posic = 0 //Posiciona no vetor se caso ele retornar a raça encontrada
+var posic = -1 //Posiciona no vetor se caso ele retornar a raça encontrada
 var escolha = 0
 //Array
 var tiporaca = ['brutos', 'engenhoqueiro', 'tecelã', 'malandra', 'coração de pedra', 'ladra de mentes']//Define as Raças Existentes
